@@ -1,0 +1,420 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>代码风格 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="customized_widget.html" />
+    
+    
+    <link rel="prev" href="name_specification/underline.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="SUMMARY.html">
+            
+                <a href="SUMMARY.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="name_specification/abstract.html">
+            
+                <a href="name_specification/abstract.html">
+            
+                    
+                    命名规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="name_specification/UpperCamelCase.html">
+            
+                <a href="name_specification/UpperCamelCase.html">
+            
+                    
+                    UpperCamelCase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="name_specification/lowerCamelCase.html">
+            
+                <a href="name_specification/lowerCamelCase.html">
+            
+                    
+                    lowerCamelCase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="name_specification/lowercase_with_underscores.html">
+            
+                <a href="name_specification/lowercase_with_underscores.html">
+            
+                    
+                    lowercase_with_underscores
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="name_specification/underline.html">
+            
+                <a href="name_specification/underline.html">
+            
+                    
+                    下划线“_”的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="code_style.html">
+            
+                <a href="code_style.html">
+            
+                    
+                    代码风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="customized_widget.html">
+            
+                <a href="customized_widget.html">
+            
+                    
+                    自定义 Widget
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >代码风格</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x4E0E;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;">&#x4EE3;&#x7801;&#x98CE;&#x683C;&#x4E0E;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</h2>
+<h3 id="&#x7F29;&#x8FDB;">&#x7F29;&#x8FDB;</h3>
+<p>Dart &#x548C; Flutter &#x7684;&#x4EE3;&#x7801;&#x7F29;&#x8FDB;&#x5747;&#x4E3A; 2 &#x4E2A;&#x7A7A;&#x683C;&#x3002;</p>
+<h3 id="&#x907F;&#x514D;-var-&#x7684;&#x4F7F;&#x7528;">&#x907F;&#x514D; var &#x7684;&#x4F7F;&#x7528;</h3>
+<p>&#x5E94;&#x907F;&#x514D;&#x4F7F;&#x7528; var &#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x3002;</p>
+<p>&#x867D;&#x7136; Dart &#x652F;&#x6301;&#x7C7B;&#x578B;&#x63A8;&#x5BFC;&#xFF0C;&#x4F46;&#x4EE3;&#x4EF7;&#x662F;&#x66F4;&#x957F;&#x7684;&#x7F16;&#x8BD1;&#x548C;&#x6267;&#x884C;&#x65F6;&#x957F;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x4F1A;&#x964D;&#x4F4E;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x8BFB;&#x6027;&#xFF0C;&#x5728; Dart &#x548C; Flutter &#x6E90;&#x7801;&#x4EE5;&#x53CA;&#x6D41;&#x884C;&#x4E09;&#x65B9;&#x5E93;&#x4E2D;&#x6781;&#x5C11;&#x4F7F;&#x7528;&#x3002;</p>
+<h3 id="&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;">&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;</h3>
+<p>Dart &#x4E0D;&#x652F;&#x6301;&#x51FD;&#x6570;&#x91CD;&#x8F7D;&#xFF0C;&#x8981;&#x5B9E;&#x73B0;&#x7C7B;&#x4F3C;&#x529F;&#x80FD;&#x65F6;&#xFF0C;&#x5E94;&#x4F18;&#x5148;&#x8003;&#x8651;&#x4F7F;&#x7528; <strong>&#x547D;&#x540D;&#x53EF;&#x9009;&#x53C2;&#x6570;</strong>&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x547D;&#x540D;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x66F4;&#x5BB9;&#x6613;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#xFF0C;&#x7B26;&#x5408;&#x5F00;&#x95ED;&#x539F;&#x5219;&#xFF0C;&#x5373;&#x5BF9;&#x4FEE;&#x6539;&#x5173;&#x95ED;&#xFF0C;&#x5BF9;&#x6269;&#x5C55;&#x5F00;&#x653E;&#x3002;</p>
+<h3 id="&#x547D;&#x540D;&#x53C2;&#x6570;&#x540E;&#x7684;&#x9017;&#x53F7;">&#x547D;&#x540D;&#x53C2;&#x6570;&#x540E;&#x7684;&#x9017;&#x53F7;</h3>
+<p>&#x51FD;&#x6570;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x53EF;&#x9009;&#x53C2;&#x6570;&#x540E;&#x5E94;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;&#x9017;&#x53F7;&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x8BC1;&#x81EA;&#x52A8;&#x683C;&#x5F0F;&#x5316;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x3002;</p>
+<h3 id="&#x907F;&#x514D;-part-&#x548C;-part-of-&#x7684;&#x4F7F;&#x7528;">&#x907F;&#x514D; part &#x548C; part of &#x7684;&#x4F7F;&#x7528;</h3>
+<p><code>part</code> &#x548C; <code>part of</code> &#x76EE;&#x524D;&#x66F4;&#x591A;&#x7684;&#x4F7F;&#x7528;&#x5728;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x5728; <code>package</code> &#x4E2D;&#x4E5F;&#x6709;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x603B;&#x4F53;&#x6765;&#x8BF4;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;&#x56E0;&#x4E3A;&#x4F1A;&#x5BFC;&#x81F4;&#x4EE3;&#x7801;&#x4E0D;&#x6613;&#x7406;&#x89E3;&#x548C;&#x7EF4;&#x62A4;&#xFF0C;&#x5F00;&#x53D1;&#x7EC4;&#x5728;&#x672A;&#x6765;&#x53EF;&#x80FD;&#x4F1A;&#x5C06;&#x5B83;&#x4EEC;&#x79FB;&#x9664;&#x6216;&#x5F15;&#x5165;&#x65B0;&#x7279;&#x6027;&#x66FF;&#x4EE3;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;--&#x5224;&#x7A7A;">&#x4F7F;&#x7528; <code>?.</code> &#x5224;&#x7A7A;</h3>
+<p>&#x4F7F;&#x7528;&#x5BF9;&#x8C61;&#x6210;&#x5458;&#x8BBF;&#x95EE;&#x8FD0;&#x7B97;&#x7B26;&#x4E4B;&#x524D;&#xFF0C;&#x4E00;&#x822C;&#x8981;&#x8FDB;&#x884C;&#x5224;&#x7A7A;&#xFF0C;&#x4E00;&#x822C;&#x7684;&#x5199;&#x6CD5;&#x662F;</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">if</span> (foo != <span class="hljs-keyword">null</span>) {
+  foo.bar();
+}
+</code></pre>
+<p>Dart &#x4E2D;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5199;</p>
+<pre><code class="lang-dart">foo?.bar();
+</code></pre>
+<p>&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#x7B49;&#x4EF7;&#x3002;</p>
+<h3 id="&#x7B26;&#x53F7;&#x7684;&#x4F7F;&#x7528;"><code>??</code> &#x7B26;&#x53F7;&#x7684;&#x4F7F;&#x7528;</h3>
+<p>&#x4E3E;&#x4F8B;&#x8BF4;&#x660E;</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">if</span> (optionalThing.isEnabled) {
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Have enabled thing.&quot;</span>);
+}
+</code></pre>
+<p>&#x5982;&#x679C; <code>optionalThing</code> &#x4E3A; <code>null</code>&#xFF0C;&#x5219;&#x4F1A;&#x5F15;&#x8D77;&#x5F02;&#x5E38;&#xFF0C;&#x867D;&#x7136; <code>?.</code> &#x53EF;&#x4EE5;&#x5224;&#x7A7A;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x6539;&#x5199;&#x5982;&#x4E0B;&#x5219;&#x4F1A;&#x5F15;&#x8D77;&#x5176;&#x4ED6;&#x95EE;&#x9898;</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">if</span> (optionalThing?.isEnabled) {
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Have enabled thing.&quot;</span>);
+}
+</code></pre>
+<p><code>optionalThing?.isEnabled</code> &#x5728; <code>optionalThing</code> &#x4E0D;&#x4E3A; <code>null</code> &#x65F6;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5E03;&#x5C14;&#x503C;&#xFF0C;&#x4F46;&#x5728; <code>optionalThing</code> &#x4E3A; <code>null</code> &#x65F6;&#x8FD4;&#x56DE; <code>null</code>&#xFF0C;&#x8FD9;&#x5728; dart &#x4E2D;&#x4F1A;&#x5F15;&#x8D77;&#x5F02;&#x5E38;&#xFF0C;&#x67D0;&#x4E9B;&#x8BED;&#x8A00;&#x4E2D; <code>null</code> &#x53EF;&#x4EE5;&#x4EE3;&#x8868; <code>false</code>&#xFF0C;&#x5728; dart &#x4E2D;&#x4E0D;&#x53EF;&#x4EE5;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x7528; <code>??</code> &#x8FD0;&#x7B97;&#x7B26;&#x5219;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5199;</p>
+<pre><code class="lang-dart"><span class="hljs-keyword">if</span> (optionalThing?.isEnabled ?? <span class="hljs-keyword">false</span>) {
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Have enabled thing.&quot;</span>);
+}
+</code></pre>
+<h3 id="&#x96C6;&#x5408;">&#x96C6;&#x5408;</h3>
+<h5 id="&#x521D;&#x59CB;&#x5316;">&#x521D;&#x59CB;&#x5316;</h5>
+<p>Dart &#x4E2D;&#x5E94;&#x5C3D;&#x91CF;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x521B;&#x5EFA;&#x96C6;&#x5408;&#xFF0C;&#x63A8;&#x8350;&#x7684;&#x5199;&#x6CD5;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-dart"><span class="hljs-built_in">List</span> points = [];
+<span class="hljs-built_in">List</span>&lt;<span class="hljs-built_in">String</span>&gt; names = [];
+<span class="hljs-keyword">var</span> items = &lt;Item&gt;[];
+
+<span class="hljs-built_in">Map</span> addresses = {};
+<span class="hljs-built_in">Map</span>&lt;<span class="hljs-built_in">String</span>, <span class="hljs-keyword">dynamic</span>&gt; headers = {};
+<span class="hljs-keyword">var</span> body = &lt;<span class="hljs-built_in">String</span>, <span class="hljs-keyword">dynamic</span>&gt;{};
+</code></pre>
+<p>&#x4F46;&#x5982;&#x679C;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5B9A;&#x957F;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5219;&#x5E94;&#x4F7F;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;</p>
+<pre><code class="lang-dart"><span class="hljs-built_in">List</span>&lt;<span class="hljs-built_in">String</span>&gt; names = <span class="hljs-built_in">List</span>(<span class="hljs-number">10</span>);
+names[<span class="hljs-number">0</span>] = <span class="hljs-string">&apos;John&apos;</span>; <span class="hljs-comment">// OK</span>
+names.add(<span class="hljs-string">&apos;Bill&apos;</span>); <span class="hljs-comment">// &#x5B9A;&#x957F;&#x6570;&#x7EC4;&#x4E0D;&#x80FD;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#xFF0C;&#x4F1A;&#x629B;&#x5F02;&#x5E38; Unsupported operation: Cannot add to a fixed-length list</span>
+</code></pre>
+<h5 id="&#x5224;&#x7A7A;">&#x5224;&#x7A7A;</h5>
+<p>&#x96C6;&#x5408;&#x7684;&#x5224;&#x7A7A;&#x5E94;&#x4F7F;&#x7528;&#x5185;&#x5EFA; getter &#x51FD;&#x6570; isEmpty &#x548C; isNotEmpty&#xFF0C;&#x4E0D;&#x80FD;&#x4F7F;&#x7528; length&#xFF0C;&#x56E0;&#x4E3A;&#x6548;&#x7387;&#x4F4E;&#x4E0B;&#x3002;</p>
+<h5 id="&#x904D;&#x5386;">&#x904D;&#x5386;</h5>
+<p>&#x6570;&#x7EC4;&#x904D;&#x5386;&#x7684;&#x65B9;&#x6CD5;&#x53CA;&#x6548;&#x7387;&#x5BF9;&#x6BD4;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-dart"><span class="hljs-comment"><span class="markdown">/// for &#x5FAA;&#x73AF; &#x6548;&#x7387;&#x6700;&#x9AD8;</span></span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; names.length; i++) {
+  <span class="hljs-comment">// do something</span>
+}
+
+<span class="hljs-comment"><span class="markdown">/// forEach &#x6548;&#x7387;&#x7B2C;&#x4E8C;</span></span>
+names.forEach((name) {
+  <span class="hljs-comment">// do something</span>
+});
+
+<span class="hljs-comment"><span class="markdown">/// for-in &#x6548;&#x7387;&#x6700;&#x4F4E;</span></span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> name <span class="hljs-keyword">in</span> names) {
+  <span class="hljs-comment">// do something</span>
+}
+</code></pre>
+<p>&#x7ECF;&#x8FC7;&#x5B9E;&#x6D4B;&#xFF08;i5-7360U/16G&#xFF09;&#xFF0C;&#x6267;&#x884C;&#x6548;&#x7387;&#x5BF9;&#x6BD4;&#x5982;&#x4E0B;</p>
+<p><img src="images/loop_effeciency.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="name_specification/underline.html" class="navigation navigation-prev " aria-label="Previous page: 下划线“_”的使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="customized_widget.html" class="navigation navigation-next " aria-label="Next page: 自定义 Widget">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"代码风格","level":"1.4","depth":1,"next":{"title":"自定义 Widget","level":"1.5","depth":1,"path":"customized_widget.md","ref":"customized_widget.md","articles":[]},"previous":{"title":"下划线“_”的使用","level":"1.3.4","depth":2,"path":"name_specification/underline.md","ref":"name_specification/underline.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toc","livereload"],"pluginsConfig":{"toc":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"code_style.md","mtime":"2020-06-16T05:49:29.592Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-07-13T01:17:32.869Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
